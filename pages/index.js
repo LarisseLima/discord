@@ -45,7 +45,7 @@ function Titulo(props) {
     </>
   );
 }
-kjssajjsallkkj
+
 export default function PaginaInicial() {
   const username = 'LarisseLima';
 
