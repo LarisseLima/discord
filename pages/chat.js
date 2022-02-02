@@ -9,7 +9,7 @@ export default function ChatPage() {
  function handleNovaMensagem(novaMensagem) {
   const mensagem = {
    id: listaDeMensagens.length + 1,
-   de: 'matheusnascgomes',
+   de: 'LarisseLima',
    texto: novaMensagem,
   };
 
@@ -157,7 +157,7 @@ function MessageList(props) {
          display: 'inline-block',
          marginRight: '8px',
         }}
-        src={`https://github.com/matheusnascgomes.png`}
+        src={`https://github.com/LarisseLima.png`}
        />
        <Text tag="strong">
         {mensagem.de}
