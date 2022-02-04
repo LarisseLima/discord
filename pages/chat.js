@@ -1,9 +1,9 @@
 import { Box, Text, TextField, Image, Button } from '@skynexui/components';
 import React from 'react';
 import appConfig from '../config.json';
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 import { createClient } from '@supabase/supabase-js'
-import { ButtonSendSticker} from '../src/components/ButtonSendSticker'
+import { ButtonSendSticker } from '../src/components/ButtonSendSticker'
 
 
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTY0Mzg0MjgyMSwiZXhwIjoxOTU5NDE4ODIxfQ.vwyary8858x27bF4hEW0gJ1xRIIPUPkhuBAp0_uTPEM';
@@ -202,7 +202,16 @@ function MessageList(props) {
                 {(new Date().toLocaleDateString())}
               </Text>
             </Box>
-            {mensagem.texto}
+            {mensagem.texto.startsWith(':sticker:') ?
+              (
+                <Image src={mensagem.texto.replace(':sticker:', '')}
+                  styleSheet={{
+                    width: '150px',
+                  }}
+                />
+              ) : (
+                mensagem.texto
+              )}
           </Text>
         );
       })}
