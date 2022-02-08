@@ -13,31 +13,22 @@ export function ButtonSendSticker(props) {
     >
       <Button
         styleSheet={{
-          //borderRadius: '50%',
-          //padding: '0 3px 0 0',
-          minWidth: '42px',
-          minHeight: '42px',
+          borderRadius: '50%',
+          minWidth: '50px',
+          minHeight: '50px',
           fontSize: '20px',
+          marginBottom: '8px',
+          margin: '5px',
           lineHeight: '0',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          marginLeft: '5px',
-          marginBottom: '7px',          
-          //marginRight: '7px',
-          border: '1px solid #000000',      
-          backgroundColor: appConfig.theme.colors.background.fundoBlack1,
-          filter: isOpen ? 'grayscale(0)' : 'grayscale(1)',
-          hover: {
-            backgroundColor: appConfig.theme.colors.background.fundoBlue,
-            border: '1px solid #000000',
-          },
-          focus: {
-            backgroundColor: appConfig.theme.colors.background.fundoBlue,
-          } 
-          }}
-        label="🎨"
+         
+        }}
+        label="😁"
         onClick={() => setOpenState(!isOpen)}
+        variant='secondary'
+        colorVariant='light'
       />
       {isOpen && (
         <Box
@@ -46,27 +37,26 @@ export function ButtonSendSticker(props) {
             flexDirection: 'column',
             borderRadius: '5px',
             position: 'absolute',
-            backgroundColor: appConfig.theme.colors.background.fundoBlack1,
+            backgroundColor: appConfig.theme.colors.neutrals[800],
             width: {
               xs: '200px',
               sm: '290px',
             },
             height: '300px',
-            right: '0px',
-            bottom: '50px',
+            right: '30px',
+            bottom: '30px',
             padding: '16px',
             boxShadow: 'rgba(4, 4, 5, 0.15) 0px 0px 0px 1px, rgba(0, 0, 0, 0.24) 0px 8px 16px 0px',
           }}
           onClick={() => setOpenState(false)}
-          
         >
           <Text
             styleSheet={{
               color: appConfig.theme.colors.neutrals["000"],
-              //fontWeight: 'bold',
+              fontWeight: 'bold',
             }}
           >
-            Stickers 🎨
+            Stickers
           </Text>
           <Box
             tag="ul"
@@ -75,8 +65,8 @@ export function ButtonSendSticker(props) {
               flexWrap: 'wrap',
               justifyContent: 'space-between',
               flex: 1,
-              paddingTop: '10px',
-              overflowY: 'scroll',
+              paddingTop: '16px',
+              overflow: 'scroll',
             }}
           >
             {appConfig.stickers.map((sticker) => (
@@ -88,14 +78,14 @@ export function ButtonSendSticker(props) {
                 }}
                 tag="li" key={sticker}
                 styleSheet={{
-                  width: '30%',
-                  borderRadius: '3px',
+                  width: '50%',
+                  borderRadius: '5px',
                   padding: '10px',
                   focus: {
-                    backgroundColor: appConfig.theme.colors.background.fundoBlack,
+                    backgroundColor: appConfig.theme.colors.neutrals[100],
                   },
                   hover: {
-                    backgroundColor: appConfig.theme.colors.background.fundoBlue,
+                    backgroundColor: appConfig.theme.colors.neutrals[500],
                   }
                 }}
               >

@@ -62,7 +62,6 @@ export default function ChatPage() {
     mensagem
    ])
    .then(({ data }) => {
-    console.log('Criando mensagem: ', data);
    });
 
   setMensagem('');
@@ -85,10 +84,10 @@ export default function ChatPage() {
   <Box
    styleSheet={{
     display: 'flex', alignItems: 'center', justifyContent: 'center',
-    backgroundColor: appConfig.theme.colors.neutrals[200],
+    backgroundColor: appConfig.theme.colors.neutrals[900],
     backgroundImage: 'url(https://images.unsplash.com/photo-1604430352940-cf2acfb26ea9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80)',
     backgroundRepeat: 'no-repeat', backgroundSize: 'cover',
-    color: appConfig.theme.colors.neutrals['000']
+    color: appConfig.theme.colors.neutrals['100']
    }}
   >
    <Box
@@ -98,7 +97,7 @@ export default function ChatPage() {
      flex: 1,
      boxShadow: '0 2px 10px 0 rgb(0 0 0 / 20%)',
      borderRadius: '10px',
-     backgroundColor: appConfig.theme.colors.neutrals[100],
+     backgroundColor: appConfig.theme.colors.neutrals[900],
      height: '100%',
      maxWidth: '95%',
      maxHeight: '95vh',
@@ -112,7 +111,7 @@ export default function ChatPage() {
       display: 'flex',
       flex: 1,
       height: '80%',
-      backgroundColor: appConfig.theme.colors.neutrals[100],
+      backgroundColor: appConfig.theme.colors.neutrals[900],
       flexDirection: 'column',
       borderRadius: '5px',
       padding: '16px',

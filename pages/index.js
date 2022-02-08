@@ -46,7 +46,7 @@ export default function PaginaInicial() {
       width: '100%', maxWidth: '700px',
       borderRadius: '5px', padding: '32px', margin: '16px',
       boxShadow: '0 2px 10px 0 rgb(0 0 0 / 20%)',
-      backgroundColor: appConfig.theme.colors.neutrals[100],
+      backgroundColor: appConfig.theme.colors.neutrals[700],
      }}
     >
      { }
@@ -62,7 +62,7 @@ export default function PaginaInicial() {
       }}
      >
       <Title tag="h2">Welcome Back!</Title>
-      <Text variant="body3" styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[200] }}>
+      <Text variant="body3" styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[300] }}>
        {appConfig.name}
       </Text>
 
@@ -78,10 +78,10 @@ export default function PaginaInicial() {
        fullWidth
        textFieldColors={{
         neutral: {
-         textColor: appConfig.theme.colors.neutrals["000"],
-         mainColor: appConfig.theme.colors.primary[500],
-         mainColorHighlight: appConfig.theme.colors.neutrals["000"],
-         backgroundColor: appConfig.theme.colors.neutrals[100],
+         textColor: appConfig.theme.colors.neutrals["200"],
+         mainColor: appConfig.theme.colors.neutrals[900],
+         mainColorHighlight: appConfig.theme.colors.primary["500"],
+         backgroundColor: appConfig.theme.colors.neutrals[900],
         },
        }}
       />
@@ -91,9 +91,9 @@ export default function PaginaInicial() {
        fullWidth
        buttonColors={{
         contrastColor: appConfig.theme.colors.neutrals["000"],
-        mainColor: appConfig.theme.colors.neutrals[100],
-        mainColorLight: appConfig.theme.colors.primary[100],
-        mainColorStrong: appConfig.theme.colors.primary[500],
+        mainColor: appConfig.theme.colors.primary[500],
+        mainColorLight: appConfig.theme.colors.primary[400],
+        mainColorStrong: appConfig.theme.colors.primary[600],
        }}
       />
      </Box>
@@ -108,9 +108,9 @@ export default function PaginaInicial() {
        alignItems: 'center',
        maxWidth: '200px',
        padding: '16px',
-       backgroundColor: appConfig.theme.colors.neutrals[100],
+       backgroundColor: appConfig.theme.colors.neutrals[800],
        border: '1px solid',
-       borderColor: appConfig.theme.colors.neutrals[400],
+       borderColor: appConfig.theme.colors.neutrals[999],
        borderRadius: '10px',
        flex: 1,
        minHeight: '240px',
@@ -130,10 +130,10 @@ export default function PaginaInicial() {
        target="_blank"
        href={`https://github.com/${username}`}
        styleSheet={{
-        color: appConfig.theme.colors.neutrals[200],
+        color: appConfig.theme.colors.neutrals[400],
         backgroundColor: appConfig.theme.colors.primary[999],
         border: '1px solid',
-        borderColor: appConfig.theme.colors.neutrals[400],
+        borderColor: appConfig.theme.colors.neutrals[500],
         borderRadius: '10px',
         padding: '3px 10px',
         borderRadius: '1000px',
