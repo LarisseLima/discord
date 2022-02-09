@@ -150,8 +150,8 @@ export default function ChatPage() {
         borderRadius: '5px',
         padding: '15px 8px',
         marginRight: '12px',
-        backgroundColor: appConfig.theme.colors.primary[800],
-        color: appConfig.theme.colors.neutrals["000"],
+        backgroundColor: appConfig.theme.colors.primary[600],
+        color: appConfig.theme.colors.neutrals["800"],
        }}
       />
       { }
@@ -175,7 +175,7 @@ export default function ChatPage() {
        iconName="FaPaperPlane"
        type="button"
        variant='secondary'
-       colorVariant='positive'
+       colorVariant='accent'
 
        onClick={(event) => {
         event.preventDefault();
@@ -198,7 +198,7 @@ function Header() {
     </Text>
     <Button
      variant='secondary'
-     colorVariant='light'
+     colorVariant='accent'
      label='Logout'
      href="/"
     />
@@ -233,7 +233,7 @@ function MessageList(props) {
        padding: '6px',
        marginBottom: '12px',
        hover: {
-        backgroundColor: appConfig.theme.colors.neutrals[100],
+        backgroundColor: appConfig.theme.colors.neutrals[600],
        }
       }}
      >
@@ -272,7 +272,7 @@ function MessageList(props) {
          marginLeft: "12px",
          width: "15px",
          height: "15px",
-         color: appConfig.theme.colors.primary["100"],
+         color: appConfig.theme.colors.primary["500"],
          hover: {
           color: "orange",
          },

@@ -28,7 +28,7 @@ export function ButtonSendSticker(props) {
         label="😁"
         onClick={() => setOpenState(!isOpen)}
         variant='secondary'
-        colorVariant='light'
+        colorVariant='accent'
       />
       {isOpen && (
         <Box
