@@ -35,14 +35,45 @@
 <h2 align="center">Funcionalidades 🛠️</h2>
 
    <p>   
-- Quiz 
-    - Login com Github,
-    - Chat Real time,
-    - Enavio de stickers
+    - Login com Github,<br>
+    - Chat Real time,<br>
+    - Enavio de stickers<br>
 - Entre várias outras coisas incríveis!
    </p>
 
 ---
 
+<h2 align="center">Como Rodar 🤔</h2>
 
- 
+   ```
+   - Clone esse repositório:
+   $ git clone https://github.com/LarisseLima/discord 
+
+   - Entre no diretório:
+   $ cd discord
+
+   - Instale as dependências:
+   $ npm i OU yarn install
+
+   - Rode o projeto: 
+   $ npm run dev OU yarn dev
+   ```
+
+---
+
+<h2 align="center">Como Contribuir 💪</h2>
+
+   ```
+   - Fork o projeto 
+
+   - Cria uma nova branch com suas mudanças:
+   $ git checkout -b my-feature
+
+   - Salve suas mudanças e crie uma mensagem de commit falando o que fez:
+   $ git commit -m "feature: My new feature"
+
+   - Envie suas mudanças:
+   $ git push origin my-feature
+   ```
+
+---
