@@ -31,3 +31,18 @@
    </p>
 
 ---
+
+<h2 align="center">Funcionalidades 🛠️</h2>
+
+   <p>   
+- Quiz 
+    - Login com Github,
+    - Chat Real time,
+    - Enavio de stickers
+- Entre várias outras coisas incríveis!
+   </p>
+
+---
+
+
+ 
